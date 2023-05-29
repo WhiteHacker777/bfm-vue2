@@ -11,6 +11,7 @@
 
         <el-main>
           Main
+          <FilmCard></FilmCard>
           <el-table
               :data="tableData"
               border
@@ -51,11 +52,13 @@
 <script>
 // @ is an alias to /src
 import Header from "@/components/front-end/Header";
+import FilmCard from "@/components/front-end/FilmCard";
 
 export default {
   name:"Layout",
   components:{
     Header,
+    FilmCard,
   },
   data() {
     return {
